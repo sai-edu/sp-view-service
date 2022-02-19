@@ -1,23 +1,17 @@
 <template lang="pug">
   section.container
     div
-      app-logo
-      h1.title
-        | sp-view-service
-      h2.subtitle
-        | Nuxt.js project
-      .links
-        nuxt-link.button--green(
-          to="/test/"
-        ) testページへ
+      h1.title hoge {{hoge}}
+
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
 
 export default {
-  components: {
-    AppLogo
+  data() {
+    return {
+      title: 'hoge'
+    }
   }
 }
 </script>
@@ -38,18 +32,6 @@ export default {
   font-size: 100px;
   color: #35495e;
   letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
 }
 </style>
 

@@ -1,7 +1,7 @@
 <template lang="pug">
   section.container
     div
-      h1.title hoge {{hoge}}
+      h1.title hoge
 
 </template>
 

@@ -6,10 +6,11 @@
         | sp-view-service
       h2.subtitle
         | Nuxt.js project
-      .links
-        nuxt-link.button--green(
-          to="/test/"
-        ) testページへ
+      v-btn(
+        nuxt
+        to="/test/"
+        color="#ffff"
+      ) testページへ
 </template>
 
 <script>
